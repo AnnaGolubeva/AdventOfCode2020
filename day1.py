@@ -1,7 +1,7 @@
 import numpy as np
 
 
-with open('puzzle1_numbers.txt') as f: nums= f.read().splitlines()
+with open('input_day1.txt') as f: nums= f.read().splitlines()
 nums = list(map(int, nums)) 
 
 num_nums=len(nums)
