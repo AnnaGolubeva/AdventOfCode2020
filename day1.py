@@ -7,8 +7,8 @@ nums = list(map(int, nums))
 num_nums=len(nums)
 
 for i in range(num_nums):
-	for j in range(num_nums):
-		for k in range(num_nums):
+	for j in range(i+1,num_nums):
+		for k in range(j+1,num_nums):
 			sum_nums= nums[i]+nums[j]+nums[k]
 			if sum_nums==2020:
 				print(f'{nums[i]}*{nums[j]}*{nums[k]} = {nums[i]*nums[j]*nums[k]}')
@@ -19,6 +19,7 @@ for i in range(num_nums):
 #=== from reddit ===#
 
 #=== PART 1
+
 # vals = map(int, nums)
 # while vals:
 #     x = vals.pop(0)
